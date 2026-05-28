@@ -16,6 +16,7 @@ if %errorlevel% neq 0 (
 :: Install dependencies
 echo Installing required packages (one time)...
 pip install httpx
+pip install winrt-Windows.Foundation.Collections
 pip install aiohttp
 pip install winrt-Windows.Media.Control winrt-Windows.Foundation requests >nul
 if %errorlevel% neq 0 (
